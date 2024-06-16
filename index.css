@@ -13,15 +13,7 @@ body {
     margin: 0;
     margin-bottom: 30px;
 }
-body, #darken-layer {   /* prevent scrolling in browsers*/
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-    overflow-y: scroll;
-}
-body::-webkit-scrollbar, #darken-layer::-webkit-scrollbar {
-     display: none;  
- }
-          
+
 h1 {
     font-family: "Josefin Sans", sans-serif;
     color: hsl(240, 4%, 95%);
@@ -211,7 +203,7 @@ h4.workout-description {
     left: 0px;
     right: 0px;
     width: 100%;
-    height: 100%;
+    height: 150%;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.4);
 }
