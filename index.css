@@ -78,6 +78,11 @@ button {
     max-width: 340px;
     height: 100vh;
     overflow: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+#main-page::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 #popup-management {
     position: relative;
