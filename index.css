@@ -12,6 +12,12 @@ body {
     height: 100%;
     margin: 0;
     margin-bottom: 30px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar { 
+display: none;  /* Safari and Chrome */
 }
 
 h1 {
