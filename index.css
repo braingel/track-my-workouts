@@ -13,6 +13,15 @@ body {
     margin: 0;
     margin-bottom: 30px;
 }
+body, #darken-layer {   /* prevent scrolling in browsers*/
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar, #darken-layer::-webkit-scrollbar {
+     display: none;  
+ }
+          
 h1 {
     font-family: "Josefin Sans", sans-serif;
     color: hsl(240, 4%, 95%);
