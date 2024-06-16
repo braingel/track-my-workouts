@@ -1,0 +1,449 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #231745 0%, #5F43B2 100%);
+    background-attachment: fixed;
+    overflow: hidden; 
+    height: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(240, 4%, 95%);
+}
+#welcome-text {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+button {
+    font-family: "Jost", sans-serif;
+    color: white;
+    user-select: none;
+}
+#container {
+    max-width: 430px;
+    margin: 0 auto;
+}
+#name-input-page {
+    display: none;
+    text-align: center;
+    overflow: hidden; 
+}
+
+#name-input-text {
+    margin-top: 347px;
+    margin-bottom: 0;
+    color: hsl(240, 4%, 95%);
+    font-size: 32px;
+}
+#name-input {
+    margin-top: 28px;
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%, 10%);
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+
+}
+#enter-name-btn {
+    margin-top: 19px;
+    width: 173px;
+    height: 39px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#welcome-message-page {
+    display: none;
+    text-align: center;
+    max-width: 320px;
+    margin: 384px auto 0 auto;
+    overflow: hidden; 
+}
+#main-page {
+    display: none;
+    margin: 0 auto;
+    max-width: 340px;
+    height: 100vh;
+    overflow: auto;
+}
+#popup-management {
+    position: relative;
+    display: none;
+    width: 100%;
+    z-index: 15;
+}
+#main-page-text {
+    text-align: left;
+    margin-top: 97px;
+}
+#workout-card-gallery, #session-gallery {
+    display: block;
+    width: 100%;
+}
+#session-gallery {
+    margin-bottom: 30px;
+}
+.workout-card {
+    width: 100%;
+    height: auto;
+    background-color: hsl(255, 5%, 95%);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: relative; /* for the little edit button :3*/
+    margin-bottom: 35px; /*to seperate cards*/
+    order: 0;
+}
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(255, 61%, 5%);
+    text-align: center;
+}
+h3.workout-name {
+    max-width: 289px;
+    padding-top: 30px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+}
+h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    color: hsl(255, 17%, 17%);
+    font-weight: 400;
+}
+h4.workout-description {
+    max-width: 289px; 
+    padding-top: 15px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    overflow-wrap: break-word;
+}
+#workout-set-groups {
+    max-width: 260px;
+    margin: 0 auto;
+}
+#new-workout-btn {
+    margin-top: 35px;
+    background-color: hsl(175, 45%, 48%);
+    border: none;
+    border-radius: 10px;
+    padding: 17px 56px;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-workout-btn, #exit-img, #exit-save {  /* maybe use @mediasource to get all little images and make them the same fixed width and size*/
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+    user-select: none;
+}
+.complete-workout-btn {
+    display: block;
+    width: 289px;
+    height: 45px;
+    background-color: hsl(255, 90%, 90%);
+    color: hsl(255, 60%, 25%);
+    margin: 25px auto 0 auto;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+#plus-img {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+#logged-sessions-text {
+    display: block;
+    margin-top: 137px;
+    font-family: "Jost";
+    font-size: 24px;
+    color: hsl(255, 90%, 90%);
+}
+.session-card {
+    display: block;
+    background-color: hsl(255, 38%, 56%);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#darken-layer {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.logged-name {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 4%, 95%);
+    font-weight: 700;
+    font-size: 12px;
+    max-width: 289px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.logged-date {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(255, 37%, 90%);
+    padding-top: 3px;
+    margin: 0 auto;
+    max-width: 289px;
+}
+.logged-sets {
+    padding-top: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: hsl(240, 4%, 95%);
+    padding-top: 6px;
+}
+.set-groups {
+    display: flex;
+    justify-content: space-between;
+}
+.label-value-container {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    color: hsl(255, 17%, 17%);
+    font-weight: 500;
+    padding-right: 6px;
+}
+
+.set-value, .weight-value, .reps-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    display: flex;
+    background-color: hsl(253, 54%, 93%);
+    color: hsl(256, 70%, 10%);
+    width: 40px;
+    height: 27px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.weight-value {
+    width: 5em;
+}
+
+/* TODO: FIX SO THAT THE WINDOW IS RESPONSIVE AS IT GETS WIDER THEN IT MOVES */
+#add-workout-popup {
+    display: none;
+    position: absolute;
+    width: 360px;
+    max-height: 547px;
+    overflow: scroll;
+    left: 50%;
+    /* Add a negative left margin that is equal to half the width of the element. */
+    margin-left: -180px;
+    top: 100px;
+    /* And then add a negative top margin equal to half its height. */
+    background-color: hsl(240, 4%, 95%);
+    border-radius: 10px;
+    z-index: 20; /*fix z-index*/
+    padding-bottom: 26px;
+    padding-top: 26px;
+
+}
+
+#add-workout-btn {
+    border: none;
+    border-radius: 10px;
+    width: 311px;
+    height: 45px;
+    background-color: hsl(176, 28%, 88%);
+    color: hsl(174, 55%, 20%);
+    font-weight: 500;
+    margin-top: 14px;
+}
+#update-workout-btn {
+    border: none;
+    border-radius: 10px;
+    width: 311px;
+    height: 45px;
+    background-color: hsl(220, 80%, 85%);
+    color: hsl(219, 88%, 10%);
+    font-weight: 500;
+    margin-top: 14px;
+}
+#delete-btn {
+    border: none;
+    border-radius: 10px;
+    width: 311px;
+    height: 45px;
+    background-color: hsl(10, 60%, 48%);
+    color: white;
+    font-weight: 500;
+    margin-top: 14px;
+}
+
+.set-label {
+    margin-left: 90px;
+}
+label[for="weight-input"], .edit-weight-label {
+    margin-left: 20px
+} 
+label[for="reps-input"], .edit-reps-label {
+    margin-left: 33px;
+}
+label[for="workout-name-input"], label[for="workout-description-input"], .edit-workout-description-label, .edit-name-label {
+    font-weight: 400;
+    color: hsl(255, 17%, 17%);
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+}
+
+#new-workout-labels > label, .set-label, .edit-weight-label, .edit-reps-label {
+    color: hsl(255, 60%, 25%);
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+}
+input, textarea {
+    background-color: hsl(240, 15%, 90%);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+}
+.input-container {
+    margin: 20px;
+}
+.center {
+    text-align: center;
+}
+#workout-name-input, #edit-name-input {
+    width: 301px;
+    height: 27px;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+#workout-description-input, #edit-workout-description-input {
+    width: 301px;
+    max-width: 301px;
+    min-width: 301px;
+    height: auto;
+    min-height: 60px;
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+/* TODO: FIX AUTOADJUSTING HEIGHT AND WIDTH */
+#weight-input, #edit-weight-input {
+    width: 4em;
+    height: 25px;
+    text-align: center;
+    margin-left: 31px;
+}
+#reps-input, #edit-reps-input {
+    width: 4em;
+    height: 25px;
+    text-align: center;
+    margin-left: 31px;
+}
+#new-workout-labels, #edit-workout-sets-labels {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#add-sets-table {
+    display: block;
+}
+.add-sets-input, .edit-sets-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.add-sets-input > p, .edit-sets-input > p{
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(255, 17%, 17%);
+}
+#add-a-set-btn, #edit-a-set-btn {
+    border: none;
+    background-color: hsl(240, 4%, 95%);
+    color: hsl(5, 75%, 9%);
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#edit-workout-popup {
+    display: none;
+    position: absolute;
+    width: 360px;
+    max-height: 547px;
+    overflow: scroll;
+    left: 50%;
+    margin-left: -180px;
+    top: 100px;
+    background-color: hsl(240, 4%, 95%);
+    border-radius: 10px;
+    z-index: 40;
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+
+#edit-workout-warning-text, #new-workout-warning-text {
+    color: #C44A31;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+#bolden {
+    color: #53408C;
+    margin-right: 5px;
+}
