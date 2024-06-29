@@ -7,6 +7,6 @@
                 {"src":"./assets/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
             ],
     "theme_color":"#231745", 
-    "background_color":"linear-gradient(180deg, #231745 0%, #5F43B2 100%)",
+    "background_color":"#231745",
     "display":"standalone"
 }

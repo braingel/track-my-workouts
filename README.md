@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -14,7 +14,7 @@
     <img src="assets/icon-round.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">TrackMyWorkout: Workout Tracking App</h3>
+<h3 align="center">TrackMyWorkouts: Workout Tracking App</h3>
 
   <p align="center">
     A front-end fitness app that allows users to track workouts, manage workout sessions, and log progress.
@@ -88,17 +88,17 @@ This project provides a simple interface to log and manage your workout routines
 No prerequistes are required to run this project.
 
 ### Installation
-To use TrackMyWorkout, you can access the live version hosted on Netlify:
+To use TrackMyWorkouts, you can access the live version hosted on Netlify:
 
-[TrackMyWorkout Live][TrackMyWorkout]
+[TrackMyWorkouts Live][TrackMyWorkout]
 
 ### Adding to Mobile Homescreen
 
-To use TrackMyWorkout efficiently on mobile devices:
+To use TrackMyWorkouts efficiently on mobile devices:
 
 #### Safari (iOS)
 
-1. Open Safari and navigate to [TrackMyWorkout Live][TrackMyWorkout].
+1. Open Safari and navigate to [TrackMyWorkouts Live][TrackMyWorkout].
 2. Tap the "Share" button at the bottom center.
 3. Scroll down and tap on "Add to Home Screen".
 4. Enter a name for the shortcut and tap "Add".
@@ -111,7 +111,7 @@ To use TrackMyWorkout efficiently on mobile devices:
 
 #### Chrome (Android)
 
-1. Open Chrome and navigate to [TrackMyWorkout Live][TrackMyWorkout].
+1. Open Chrome and navigate to [TrackMyWorkouts Live][TrackMyWorkout].
 2. Tap the menu button (three dots) at the top right.
 3. Select "Add to Home screen".
 4. Enter a name for the shortcut and tap "Add".

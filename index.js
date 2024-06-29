@@ -121,6 +121,7 @@ exitBtn.addEventListener("click", function(){
 // Managing pop ups
 function openPopUp() {
     if (isPageVisible(mainPage)) {
+        mainPage.style.height = "0"
         darkenLayerEl.style.display = "block"
         popupManagementEl.style.display = "block"
     }
@@ -129,6 +130,7 @@ function openPopUp() {
 function closePopUpDisplay() {
     darkenLayerEl.style.display = "none"
     popupManagementEl.style.display = "none"
+    mainPage.style.height = "100vh"
 }
 
 function exitPopUp() {
